@@ -1,5 +1,6 @@
 export PATH=/usr/local/bin:$PATH
-export PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]: \[\033[33;1m\]\w\[\033[m\]\n\$ "
+# export PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]: \[\033[33;1m\]\w\[\033[m\]\n\$ "
+source ps1-git.sh
 # Handy Aliases
 alias ll='ls -al'
 alias desk='cd ~/Desktop/'
