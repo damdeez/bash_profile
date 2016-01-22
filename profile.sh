@@ -7,6 +7,7 @@ alias desk='cd ~/Desktop/'
 alias work='cd ~/Desktop/Work/'
 alias refrash='source ~/.profile'
 alias ls='ls -GFh'
+alias cl='clear'
 # Handy Functions
 function mkcd() { mkdir $1 ; cd $1 ; }
 function cdf () {
