@@ -8,6 +8,7 @@ alias work='cd ~/Desktop/Work/'
 alias refrash='source ~/.profile'
 alias ls='ls -GFh'
 alias cl='clear'
+alias cls="echo -en '\033c\033[3J'"
 # Handy Functions
 function mkcd() { mkdir $1 ; cd $1 ; }
 function cdf () {
