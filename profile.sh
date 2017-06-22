@@ -47,3 +47,5 @@ if [[ $# -eq 0 ]]; then
 </html>" >> index.html ;
 fi
 }
+
+source ~/git-completion.bash
