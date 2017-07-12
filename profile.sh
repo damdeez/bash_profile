@@ -1,6 +1,8 @@
 export PATH=/usr/local/bin:$PATH
 # export PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]: \[\033[33;1m\]\w\[\033[m\]\n\$ "
 source ~/bash_profile/ps1-git.sh
+source ~/bash_profile/git-completion.bash
+
 # Handy Aliases
 alias ll='ls -al'
 alias desk='cd ~/Desktop/'
@@ -9,6 +11,7 @@ alias refrash='source ~/.profile'
 alias ls='ls -GFh'
 alias cl='clear'
 alias cls="echo -en '\033c\033[3J'"
+
 # Handy Functions
 function mkcd() { mkdir $1 ; cd $1 ; }
 function cdf () {
@@ -23,29 +26,3 @@ function cdf () {
     echo "cd to \"$finderPath\""
     cd "$finderPath"
 }
-function mkproj() {
-if [[ $# -eq 0 ]]; then
-    mkdir css ;
-    mkdir js ;
-    touch css/style.css ;
-    touch js/main.js ;
-    touch index.html ;
-    echo -e "<!doctype html>
-<html>
-    <head>
-        <meta charset=\"utf-8\">
-        <meta name=\"description\" content=\"\">
-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-        <title>Untitled</title>
-        <link rel=\"stylesheet\" href=\"css/style.css\">
-        <link rel=\"author\" href=\"humans.txt\">
-    </head>
-    <body>
-
-        <script src=\"js/main.js\"></script>
-    </body>
-</html>" >> index.html ;
-fi
-}
-
-source ~/git-completion.bash
