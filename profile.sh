@@ -11,6 +11,7 @@ alias refrash='source ~/.profile'
 alias ls='ls -GFh'
 alias cl='clear'
 alias cls="echo -en '\033c\033[3J'"
+alias cleanGit="git branch --merged | egrep -v '(^\*|master)' | xargs git branch -D"
 
 # Handy Functions
 function mkcd() { mkdir $1 ; cd $1 ; }
