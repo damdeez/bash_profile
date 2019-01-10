@@ -28,6 +28,10 @@ function cdf () {
     cd "$finderPath"
 }
 
+function tabTitle() {
+  echo -e "\033]0;${1:?please specify a title}\007";
+}
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/dharambasic/google-cloud-sdk/path.bash.inc' ]; then . '/Users/dharambasic/google-cloud-sdk/path.bash.inc'; fi
 
